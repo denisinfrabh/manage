@@ -1,0 +1,4 @@
+# Ignorar arquivos temporários e pastas de clientes (se não quiser versionar os PDFs)
+*.log
+*.tmp
+clientes/
