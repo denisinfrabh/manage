@@ -26,7 +26,6 @@ manage/
     │   ├── clientes/         # Pastas dos usuários (ignorado no Git)
     │   └── db.sql            # Script do banco
 
-
 ## Como rodar
 1. Instala o Laragon (ou outro servidor PHP/MySQL).
 2. Joga tudo na pasta `C:\laragon\www\manage`.
