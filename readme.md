@@ -12,7 +12,6 @@ E aí, sô! Bem-vindo ao **Manage**, um sistema simples e bão pra gerenciar arq
 - **Banco**: MySQL com `manage_files`, guardadinho no `db.sql`.
 
 ## Estrutura
-
 ~~~
 manage/
     ├── public_html/          # Raiz do projeto
@@ -27,11 +26,12 @@ manage/
         ├── clientes/         # Pastas dos usuários (ignorado no Git)
         └── db.sql            # Script do banco
 ~~~
+
 ## Como rodar
 1. Instala o Laragon (ou outro servidor PHP/MySQL).
 2. Joga tudo na pasta `C:\laragon\www\manage`.
 3. Cria o banco com o `db.sql`.
-4. Acessa `manage.test` e manda ver!!!
+4. Acessa `manage.test` e manda ver!
 
 ## Git e GitHub
 - Versionado com Git, direto do terminal do Laragon.
@@ -42,4 +42,4 @@ manage/
 - Bootstrap pra deixar bonitão, com modais pra cadastrar e enviar.
 - Mais validações no cadastro, pra não dar zoeira.
 
-Feito com carinho por um bichão mineiro e um poeta digital, sô! Qualquer coisa, dá um grito que a gente desenrola!!!
+Feito com carinho por um bichão mineiro e um poeta digital, sô! Qualquer coisa, dá um grito que a gente desenrola!
