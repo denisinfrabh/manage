@@ -5,6 +5,19 @@ if (!ehAdmin()) {
     header('Location: usuario.php');
     exit;
 }
+if (isset($_POST['cadastrar_usuario'])) {
+    $novo_usuario = $_POST['usuario'];
+    $novo_senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+    $novo_nome = $_POST['nome'];
+    $novo_documento = $_POST['documento'];
+    
+    $stmt = $pdo->prepare("INSERT INTO usuarios (usuario, senha, nivel, nome, documento) VALUES (?, ?, 'usuario', ?, ?)");
+    if ($stmt->execute([$novo_usuario, $novo_senha, $novo_nome, $novo_documento])) {
+        $msg = "Usuário '$novo_usuario' cadastrado com sucesso!";
+    } else {
+        $msg = "Erro ao cadastrar usuário!";
+    }
+}
 
 $msg = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -88,5 +101,14 @@ $clientes_nomes = array_column($usuarios, 'nome', 'documento');
         <?php endforeach; ?>
         </ul>
     <?php endforeach; ?>
+<h2>Cadastrar Novo Usuário</h2>
+<form method="post">
+    Usuário: <input type="text" name="usuario" required><br>
+    Senha: <input type="password" name="senha" required><br>
+    Nome: <input type="text" name="nome" required><br>
+    Documento (CPF/CNPJ): <input type="text" name="documento" required><br>
+    <input type="submit" name="cadastrar_usuario" value="Cadastrar">
+</form>
+
 </body>
 </html>
