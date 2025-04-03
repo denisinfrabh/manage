@@ -14,17 +14,17 @@ E aí, sô! Bem-vindo ao **Manage**, um sistema simples e bão pra gerenciar arq
 ## Estrutura
 
 manage/
-├── public_html/          # Raiz do projeto
-│   ├── public/          # Páginas acessíveis
-│   │   ├── login.php    # Tela de login
-│   │   ├── admin.php    # Painel do admin
-│   │   ├── usuario.php  # Painel do usuário
-│   │   └── logout.php   # Sair da sessão
-│   ├── src/             # Funções e configs
-│   │   ├── config.php   # Conexão com o banco
-│   │   └── funcoes.php  # Funções reutilizáveis
-│   ├── clientes/        # Pastas dos usuários (ignorado no Git)
-│   └── db.sql           # Script do banco
+    ├── public_html/          # Raiz do projeto
+    │   ├── public/           # Páginas acessíveis
+    │   │   ├── login.php     # Tela de login
+    │   │   ├── admin.php     # Painel do admin
+    │   │   ├── usuario.php   # Painel do usuário
+    │   │   └── logout.php    # Sair da sessão
+    │   ├── src/              # Funções e configs
+    │   │   ├── config.php    # Conexão com o banco
+    │   │   └── funcoes.php   # Funções reutilizáveis
+    │   ├── clientes/         # Pastas dos usuários (ignorado no Git)
+    │   └── db.sql            # Script do banco
 
 
 ## Como rodar
