@@ -60,7 +60,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$clientes = listarArquivos('../clientes/');
+// Substituir essa linha:
+// $clientes = listarArquivos('../clientes/');
+
+// Por isso:
+$stmt = $pdo->prepare("SELECT documento FROM usuarios WHERE nivel = 'usuario'");
+$stmt->execute();
+$clientes = $stmt->fetchAll(PDO::FETCH_COLUMN); // Pega só os documentos
 $stmt = $pdo->prepare("SELECT documento, nome FROM usuarios WHERE nivel = 'usuario'");
 $stmt->execute();
 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
