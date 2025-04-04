@@ -41,5 +41,6 @@ manage/
 ## Próximos passos
 - Bootstrap pra deixar bonitão, com modais pra cadastrar e enviar.
 - Mais validações no cadastro, pra não dar zoeira.
+- Mais validações no cadastro, pra não dar zoeira. linha de teste
 
 Feito com carinho por um bichão mineiro e um poeta digital, sô! Qualquer coisa, dá um grito que a gente desenrola!
