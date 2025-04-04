@@ -91,9 +91,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Manage Files 2025</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="#">Politica de Privacidade</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Termos e Condições</a>
                             </div>
                         </div>
                     </div>
